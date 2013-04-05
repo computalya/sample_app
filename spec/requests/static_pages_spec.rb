@@ -12,4 +12,16 @@ describe "Static Pages" do
       page.should have_selector('title', :text => 'Sample App | Home')
     end
   end
+
+  describe "Help Page" do
+    it "should have a content 'Help' " do
+      visit '/static_pages/help'
+      page.should have_selector('h1', :text => 'Help')
+    end
+
+    it "should have right title" do
+      visit '/static_pages/help'
+      page.should have_selector('title', :text => 'Sample App | Help')
+    end
+  end
 end
