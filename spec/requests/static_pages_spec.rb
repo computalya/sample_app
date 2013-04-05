@@ -38,4 +38,16 @@ describe "Static Pages" do
       page.should have_selector('title', :text => "#{base_title} | Contact")
     end
   end
+
+  describe "About Page" do
+    it "should have a content 'About' " do
+      visit '/static_pages/about'
+      page.should have_selector('h1', :text => 'About')
+    end
+
+    it "should have right title" do
+      visit '/static_pages/about'
+      page.should have_selector('title', :text => "#{base_title} | About")
+    end
+  end
 end
