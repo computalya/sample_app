@@ -11,6 +11,7 @@ group :development, :test do
   gem 'sqlite3'
   gem 'rspec-rails'
   gem 'guard-rspec'
+  gem 'terminal-notifier-guard'
 end
 
 # Gems used only for assets and not required
