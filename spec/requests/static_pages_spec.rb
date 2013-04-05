@@ -24,4 +24,16 @@ describe "Static Pages" do
       page.should have_selector('title', :text => 'Sample App | Help')
     end
   end
+
+  describe "Contact Page" do
+    it "should have a content 'Contact' " do
+      visit '/static_pages/contact'
+      page.should have_selector('h1', :text => 'Contact')
+    end
+
+    it "should have right title" do
+      visit '/static_pages/contact'
+      page.should have_selector('title', :text => 'Sample App | Contact')
+    end
+  end
 end
