@@ -15,6 +15,7 @@ group :development, :test do
   gem 'rspec-rails'
   gem 'guard-rspec'
   gem 'terminal-notifier-guard'
+  gem 'wirble'
 end
 
 # Gems used only for assets and not required
