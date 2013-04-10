@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.12'
 gem 'thor'
 gem 'lumberjack'
-gem 'bootstrap-sass', '2.0.0'
+gem 'bootstrap-sass'
 gem 'annotate', '2.5.0', group: :development
 gem 'bcrypt-ruby', '3.0.1'
 
