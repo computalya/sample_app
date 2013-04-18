@@ -16,6 +16,7 @@ group :development, :test do
   gem 'guard-rspec'
   gem 'terminal-notifier-guard'
   gem 'wirble'
+  gem 'faker'
 end
 
 # Gems used only for assets and not required
