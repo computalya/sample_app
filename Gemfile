@@ -6,6 +6,7 @@ gem 'lumberjack'
 gem 'bootstrap-sass'
 gem 'annotate', '2.5.0', group: :development
 gem 'bcrypt-ruby', '3.0.1'
+gem 'will_paginate'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'

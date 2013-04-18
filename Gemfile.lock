@@ -177,6 +177,7 @@ GEM
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
     websocket (1.0.7)
+    will_paginate (3.0.4)
     wirble (0.1.3)
     xpath (0.1.4)
       nokogiri (~> 1.3)
@@ -207,4 +208,5 @@ DEPENDENCIES
   thin
   thor
   uglifier (>= 1.0.3)
+  will_paginate
   wirble
