@@ -99,4 +99,17 @@ describe "User Pages" do
             specify { user.reload.email.should == new_email }
         end
     end
+
+    describe "index" do
+        before do
+            sign_in FactoryGirl.create(:user)
+
+            FactoryGirl.create(:user, name: "Bob", email: "bob@example.com")
+            FactoryGirl.create(:user, name: "Kamil", email: "kamil@example.com") 
+            visit users_path           
+        end
+
+        it { should have_selector('title', text: 'All users') }
+        it { should have_selector('h1',    text: 'All users') }
+    end
 end
