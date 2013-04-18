@@ -28,6 +28,7 @@ describe User do
     it { should respond_to(:authenticate) }
 
 	it { should be_valid }
+	it { should_not be_admin }
 	it { should respond_to(:authenticate) }
 
 	describe "when name is not present" do
