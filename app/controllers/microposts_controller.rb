@@ -1,5 +1,6 @@
 class MicropostsController < ApplicationController
     before_filter :signed_in_user, only: [:create, :destroy]
+    before_filter :correct_user, only: :destroy
 
     def index
     end
@@ -9,13 +10,16 @@ class MicropostsController < ApplicationController
         if @micropost.save
           flash[:success] = "Micropost created!"
           redirect_to root_path
-            else
+        else
+          @feed_items = []
           render 'static_pages/home'
         end
     end
 
-    def destroy
-    end
+   def destroy
+    @micropost.destroy
+    redirect_to root_path
+  end
 
  private
 
